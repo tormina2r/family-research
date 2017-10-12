@@ -20,3 +20,5 @@ C:\Dev\FamilyResearch\FamilyResearch.Data\bin\Debug\EntityFramework.dll
 C:\Dev\FamilyResearch\FamilyResearch.Data\bin\Debug\EntityFramework.SqlServer.dll
 C:\Dev\FamilyResearch\FamilyResearch.Data\bin\Debug\EntityFramework.xml
 C:\Dev\FamilyResearch\FamilyResearch.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Dev\FamilyResearch\FamilyResearch.Data\obj\Debug\FamilyResearch.Data.Migrations.InitialCreate.resources
+C:\Dev\FamilyResearch\FamilyResearch.Data\obj\Debug\FamilyResearch.Data.csproj.GenerateResource.Cache
