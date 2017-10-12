@@ -1,0 +1,12 @@
+C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.UI\bin\Debug\FamilyResearch.UI.exe.config
+C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.UI\bin\Debug\FamilyResearch.UI.exe
+C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.UI\bin\Debug\FamilyResearch.UI.pdb
+C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.UI\obj\Debug\FamilyResearch.UI.csprojResolveAssemblyReference.cache
+C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.UI\obj\Debug\FamilyResearch.UI.csproj.CoreCompileInputs.cache
+C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.UI\obj\Debug\FamilyResearch.UI.exe
+C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.UI\obj\Debug\FamilyResearch.UI.pdb
+C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.UI\bin\Debug\FamilyResearch.Data.dll
+C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.UI\bin\Debug\EntityFramework.dll
+C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.UI\bin\Debug\FamilyResearch.Data.pdb
+C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.UI\bin\Debug\FamilyResearch.Data.dll.config
+C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.UI\bin\Debug\EntityFramework.xml
