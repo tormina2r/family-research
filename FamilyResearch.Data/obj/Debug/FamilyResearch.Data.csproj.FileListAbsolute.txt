@@ -9,3 +9,14 @@ C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.Data\obj\Debug\Fa
 C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.Data\obj\Debug\FamilyResearch.Data.csproj.CoreCompileInputs.cache
 C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.Data\obj\Debug\FamilyResearch.Data.dll
 C:\Users\thora\source\repos\FamilyResearch.Data\FamilyResearch.Data\obj\Debug\FamilyResearch.Data.pdb
+C:\Dev\FamilyResearch\FamilyResearch.Data\bin\Debug\FamilyResearch.Data.dll.config
+C:\Dev\FamilyResearch\FamilyResearch.Data\bin\Debug\FamilyResearch.Data.dll
+C:\Dev\FamilyResearch\FamilyResearch.Data\bin\Debug\FamilyResearch.Data.pdb
+C:\Dev\FamilyResearch\FamilyResearch.Data\obj\Debug\FamilyResearch.Data.csprojResolveAssemblyReference.cache
+C:\Dev\FamilyResearch\FamilyResearch.Data\obj\Debug\FamilyResearch.Data.csproj.CoreCompileInputs.cache
+C:\Dev\FamilyResearch\FamilyResearch.Data\obj\Debug\FamilyResearch.Data.dll
+C:\Dev\FamilyResearch\FamilyResearch.Data\obj\Debug\FamilyResearch.Data.pdb
+C:\Dev\FamilyResearch\FamilyResearch.Data\bin\Debug\EntityFramework.dll
+C:\Dev\FamilyResearch\FamilyResearch.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Dev\FamilyResearch\FamilyResearch.Data\bin\Debug\EntityFramework.xml
+C:\Dev\FamilyResearch\FamilyResearch.Data\bin\Debug\EntityFramework.SqlServer.xml

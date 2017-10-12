@@ -1,5 +1,4 @@
-﻿using FamilyResearch.Data;
-using FamilyResearch.Data.DataStructures;
+﻿using FamilyResearch.Logic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,14 +11,16 @@ namespace FamilyResearch.UI
     {
         static void Main(string[] args)
         {
-            using (var repository = new Repository())
+            using (var familyService = new FamilyService())
             {
-                Console.WriteLine("List of people:");
-                var people = repository.GetAllPeople();
+                //familyService.AddPerson("Dolly", "Duck", DateTime.Today.AddYears(-100));
+                var people = familyService.GetPeopleBySurname("Duck");
                 foreach (var person in people)
                 {
                     Console.WriteLine(person);
                 }
+
+                Console.ReadKey();
             }
         }
     }

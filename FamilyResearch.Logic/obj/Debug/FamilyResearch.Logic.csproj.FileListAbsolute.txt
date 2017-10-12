@@ -1,0 +1,11 @@
+C:\Dev\FamilyResearch\FamilyResearch.Logic\bin\Debug\FamilyResearch.Logic.dll
+C:\Dev\FamilyResearch\FamilyResearch.Logic\bin\Debug\FamilyResearch.Logic.pdb
+C:\Dev\FamilyResearch\FamilyResearch.Logic\bin\Debug\FamilyResearch.Data.dll
+C:\Dev\FamilyResearch\FamilyResearch.Logic\bin\Debug\EntityFramework.dll
+C:\Dev\FamilyResearch\FamilyResearch.Logic\bin\Debug\FamilyResearch.Data.pdb
+C:\Dev\FamilyResearch\FamilyResearch.Logic\bin\Debug\FamilyResearch.Data.dll.config
+C:\Dev\FamilyResearch\FamilyResearch.Logic\bin\Debug\EntityFramework.xml
+C:\Dev\FamilyResearch\FamilyResearch.Logic\obj\Debug\FamilyResearch.Logic.csprojResolveAssemblyReference.cache
+C:\Dev\FamilyResearch\FamilyResearch.Logic\obj\Debug\FamilyResearch.Logic.csproj.CoreCompileInputs.cache
+C:\Dev\FamilyResearch\FamilyResearch.Logic\obj\Debug\FamilyResearch.Logic.dll
+C:\Dev\FamilyResearch\FamilyResearch.Logic\obj\Debug\FamilyResearch.Logic.pdb

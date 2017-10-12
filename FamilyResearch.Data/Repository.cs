@@ -16,7 +16,19 @@ namespace FamilyResearch.Data
             _DataContext = new DataContext();
         }
 
-        public IEnumerable<IPerson> GetAllPeople() => _DataContext.People;
+        public void AddPerson(string firstName, string surName, DateTime dateOfBirth)
+        {
+            _DataContext.People.Add(new Person
+            {
+                FirstName = firstName,
+                Surname = surName,
+                DateOfBirth = dateOfBirth
+            });
+
+            _DataContext.SaveChanges();
+        }
+
+        public IEnumerable<IPerson> GetAll() => _DataContext.People;
 
         public void Dispose()
         {
