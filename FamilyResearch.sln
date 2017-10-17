@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyResearch.UI", "Family
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyResearch.Logic", "FamilyResearch.Logic\FamilyResearch.Logic.csproj", "{2504DED1-8097-4217-8D0D-89570A376E4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyResearch.App", "FamilyResearch.App\FamilyResearch.App.csproj", "{B55307B9-E496-49B7-9FBD-1F19DB9B5F6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2504DED1-8097-4217-8D0D-89570A376E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2504DED1-8097-4217-8D0D-89570A376E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2504DED1-8097-4217-8D0D-89570A376E4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B55307B9-E496-49B7-9FBD-1F19DB9B5F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B55307B9-E496-49B7-9FBD-1F19DB9B5F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B55307B9-E496-49B7-9FBD-1F19DB9B5F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B55307B9-E496-49B7-9FBD-1F19DB9B5F6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

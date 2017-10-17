@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8199F743-7801-4475-92A2-8685FA024FD0}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>FamilyResearch.UI</RootNamespace>
-    <AssemblyName>FamilyResearch.UI</AssemblyName>
+    <ProjectGuid>{B55307B9-E496-49B7-9FBD-1F19DB9B5F6E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FamilyResearch.App</RootNamespace>
+    <AssemblyName>FamilyResearch.App</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,14 +35,10 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    <Reference Include="DryIoc, Version=2.12.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DryIoc.dll.2.12.3\lib\net45\DryIoc.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,17 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IApplicationEntryPoint.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceContainer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FamilyResearch.Logic\FamilyResearch.Logic.csproj">
-      <Project>{2504DED1-8097-4217-8D0D-89570A376E4F}</Project>
-      <Name>FamilyResearch.Logic</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FamilyResearch.Data\FamilyResearch.Data.csproj">
+      <Project>{aa9aad3d-05a1-4dfc-8ebd-04858e5d28fb}</Project>
+      <Name>FamilyResearch.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
