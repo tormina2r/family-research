@@ -9,7 +9,10 @@ namespace FamilyResearch.App
         static ServiceContainer()
         {
             Instance = new Container();
+
+            BusinessLogic.Container.Register(Instance);
             Data.Container.Register(Instance);
+            UI.Container.Register(Instance);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using DryIoc;
+using FamilyResearch.UI;
 
 namespace FamilyResearch.App
 {
@@ -6,6 +7,7 @@ namespace FamilyResearch.App
     {
         static void Main(string[] args)
         {
+            ServiceContainer.Instance.Resolve<IApplicationEntryPoint>().Run();
         }
     }
 }

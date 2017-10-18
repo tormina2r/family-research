@@ -2,7 +2,7 @@
 
 namespace FamilyResearch.Data
 {
-    internal interface IPersonRepository: IRepository<PersonEntity>
+    public interface IPersonRepository: IRepository<PersonEntity>
     {
 
     }

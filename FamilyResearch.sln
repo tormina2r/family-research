@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyResearch.Data", "Fami
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyResearch.UI", "FamilyResearch.UI\FamilyResearch.UI.csproj", "{8199F743-7801-4475-92A2-8685FA024FD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyResearch.Logic", "FamilyResearch.Logic\FamilyResearch.Logic.csproj", "{2504DED1-8097-4217-8D0D-89570A376E4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyResearch.BusinessLogic", "FamilyResearch.Logic\FamilyResearch.BusinessLogic.csproj", "{2504DED1-8097-4217-8D0D-89570A376E4F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyResearch.App", "FamilyResearch.App\FamilyResearch.App.csproj", "{B55307B9-E496-49B7-9FBD-1F19DB9B5F6E}"
 EndProject

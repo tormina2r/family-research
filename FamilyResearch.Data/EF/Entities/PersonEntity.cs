@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FamilyResearch.Data.EF.Entities
 {
-    internal class PersonEntity
+    public class PersonEntity
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
