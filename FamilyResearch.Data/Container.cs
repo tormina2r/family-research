@@ -12,7 +12,7 @@ namespace FamilyResearch.Data
     {
         public static void Register(IContainer container)
         {
-            container.Register<IPersonRepository, PersonRepository>(setup: Setup.With(allowDisposableTransient: true));
+            container.Register<IPersonRepository, PersonRepository>();
         }
     }
 }

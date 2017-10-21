@@ -11,7 +11,7 @@ namespace FamilyResearch.UI
     {
         public static void Register(IContainer container)
         {
-            container.Register<IApplicationEntryPoint, ApplicationEntryPoint>(setup: Setup.With(allowDisposableTransient: true));
+            container.Register<IApplicationEntryPoint, ApplicationEntryPoint>();
         }
     }
 }

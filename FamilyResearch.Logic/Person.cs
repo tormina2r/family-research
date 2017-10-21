@@ -1,12 +1,13 @@
-﻿using FamilyResearch.Data.EF.Entities;
+﻿using FamilyResearch.Data;
+using FamilyResearch.Data.EF.Entities;
 
 namespace FamilyResearch.BusinessLogic
 {
     public class PersonDisplay
     {
-        private readonly PersonEntity _Model;
+        private readonly IPerson _Model;
 
-        public PersonDisplay(PersonEntity model)
+        public PersonDisplay(IPerson model)
         {
             _Model = model;
         }

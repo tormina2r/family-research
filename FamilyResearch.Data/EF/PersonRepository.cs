@@ -9,26 +9,45 @@ namespace FamilyResearch.Data.EF
 {
     internal class PersonRepository : IPersonRepository
     {
-        DataContext _DataContext = new DataContext();
-
-        public void Add(PersonEntity entity)
+        public void Add(IPerson entity)
         {
-            _DataContext.People.Add(entity);
-            _DataContext.SaveChanges();
+            var personEntity = CreatePersonEntity(entity);
+
+            using (var dataContext = new DataContext())
+            {
+                dataContext.People.Add(personEntity);
+                dataContext.SaveChanges();                
+            }
         }
 
-        public void Delete(PersonEntity entity)
+        private PersonEntity CreatePersonEntity(IPerson entity)
         {
-            _DataContext.People.Remove(entity);
-            _DataContext.SaveChanges();
+            throw new NotImplementedException();
         }
 
-        public void Edit(PersonEntity entity) => _DataContext.SaveChanges();
+        public void Delete(IPerson entity)
+        {
+            using (var dataContext = new DataContext())
+            {
+                var personEntity = dataContext.People.Single(p => p.Id == entity.Id);
+                dataContext.People.Remove(personEntity);
+                dataContext.SaveChanges();
+            }
+        }
 
-        public PersonEntity Get(int id) => _DataContext.People.Single(person => person.Id == id);
+        public IPerson Get(int id)
+        {
+            using (var dataContext = new DataContext())
+            {
+                var personEntity = dataContext.People.Single(person => person.Id == id);
+                return personEntity;
+            }
+        }
 
-        public IEnumerable<PersonEntity> List() => _DataContext.People;
-
-        public void Dispose() => _DataContext.Dispose();
+        public IEnumerable<IPerson> List()
+        {
+            using (var dataContext = new DataContext())
+                return dataContext.People.ToList();
+        }
     }
 }

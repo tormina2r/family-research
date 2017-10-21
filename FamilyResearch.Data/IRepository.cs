@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace FamilyResearch.Data
 {
-    public interface IRepository<T>: IDisposable
+    public interface IRepository<T>
     {
         void Add(T entity);
         IEnumerable<T> List();
         T Get(int id);
-        void Edit(T entity);
         void Delete(T entity);
-    }    
+    }   
 }

@@ -1,8 +1,6 @@
-﻿using FamilyResearch.Data.EF.Entities;
-
-namespace FamilyResearch.Data
+﻿namespace FamilyResearch.Data
 {
-    public interface IPersonRepository: IRepository<PersonEntity>
+    public interface IPersonRepository: IRepository<IPerson>
     {
 
     }

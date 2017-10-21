@@ -2,7 +2,7 @@
 
 namespace FamilyResearch.UI
 {
-    public interface IApplicationEntryPoint: IDisposable
+    public interface IApplicationEntryPoint
     {
         void Run();
     }
