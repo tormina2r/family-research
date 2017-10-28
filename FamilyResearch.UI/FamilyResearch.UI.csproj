@@ -69,12 +69,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FamilyResearch.Logic\FamilyResearch.BusinessLogic.csproj">
-      <Project>{2504DED1-8097-4217-8D0D-89570A376E4F}</Project>
-      <Name>FamilyResearch.BusinessLogic</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
