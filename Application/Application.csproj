@@ -13,4 +13,8 @@
     <Folder Include="Persons\Commands\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="DryIoc.dll" Version="2.12.4" />
+  </ItemGroup>
+
 </Project>

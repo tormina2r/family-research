@@ -10,12 +10,8 @@ namespace Presentation.Mvc.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IGetPersonsQuery _GetPersonsQuery;
-
         public ActionResult Index()
         {
-            List<IPerson> persons = _GetPersonsQuery.Query().ToList();
-
             return View();
         }
 

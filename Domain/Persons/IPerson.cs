@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Application.Persons
+namespace Domain.Persons
 {
     public interface IPerson
     {

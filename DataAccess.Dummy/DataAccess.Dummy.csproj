@@ -5,11 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DryIoc.dll" Version="2.12.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\DataAccess.EF\DataAccess.EF.csproj" />
+    <ProjectReference Include="..\ServiceLayer\ServiceLayer.csproj" />
   </ItemGroup>
 
 </Project>

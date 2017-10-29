@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ServiceLayer.Persons
 {
-    public interface IPersonsRepository: IRepository<PersonEntity>
+    public interface IPersonRepository: IRepository<PersonEntity>
     {
     }    
 }
