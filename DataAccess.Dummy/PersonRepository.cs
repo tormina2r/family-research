@@ -1,16 +1,15 @@
 ﻿using ServiceLayer.Persons;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
 
 namespace DataAccess.Dummy
 {
     public class PersonRepository : IPersonRepository
     {
-        public IQueryable<IPerson> GetAll()
+        public IQueryable<IPersonEntity> GetAll()
         {
-            return new List<IPerson>
+            return new List<IPersonEntity>
             {
                 new Person{Id = 1, DateOfBirth = new DateTime(2000, 1, 1), FirstName = "Hello", LastName = "World!"},
                 new Person{Id = 2, DateOfBirth = new DateTime(2010, 1, 1), FirstName = "Hi", LastName = "World!"},
@@ -18,7 +17,7 @@ namespace DataAccess.Dummy
             }.AsQueryable();
         }
 
-        public IPerson GetById(int id)
+        public IPersonEntity GetById(int id)
         {
             return new Person
             {
@@ -29,18 +28,18 @@ namespace DataAccess.Dummy
             };
         }
 
-        public void Add(IPerson entity)
+        public void Add(IPersonEntity entity)
         {
             
         }
 
-        public void Remove(IPerson entity)
+        public void Remove(IPersonEntity entity)
         {
             
         }
     }
      
-    class Person: IPerson
+    class Person: IPersonEntity
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

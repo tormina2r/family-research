@@ -1,5 +1,7 @@
 ﻿using ServiceLayer.Persons;
 using System.Collections.Generic;
+using System.Linq;
+using Domain.Persons;
 
 namespace Application.Persons.Queries
 {
@@ -12,9 +14,7 @@ namespace Application.Persons.Queries
             _PersonRepository = personRepository;
         }
 
-        public IEnumerable<IPerson> Query()
-        {
-            return _PersonRepository.GetAll();
-        }
+        public IEnumerable<IPerson> Query() 
+            => _PersonRepository.GetAll().Select(entity => new Person(entity));
     }
 }
