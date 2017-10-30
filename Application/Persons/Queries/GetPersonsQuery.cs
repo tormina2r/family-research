@@ -1,8 +1,5 @@
-﻿using Domain.Persons;
-using ServiceLayer.Persons;
-using System;
+﻿using ServiceLayer.Persons;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Application.Persons.Queries
 {
@@ -10,20 +7,14 @@ namespace Application.Persons.Queries
     {
         private readonly IPersonRepository _PersonRepository;
 
-        public IEnumerable<IPerson> Query()
+        public GetPersonsQuery(IPersonRepository personRepository)
         {
-            return _PersonRepository.GetAll().Select(CreatePerson);
-
+            _PersonRepository = personRepository;
         }
 
-        private IPerson CreatePerson(PersonEntity entity)
+        public IEnumerable<IPerson> Query()
         {
-            return new Person
-            {
-                FirstName = entity.FirstName,
-                LastName = entity.LastName,
-                DateOfBirth = entity.DateOfBirth
-            };
+            return _PersonRepository.GetAll();
         }
     }
 }

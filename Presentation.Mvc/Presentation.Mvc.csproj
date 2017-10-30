@@ -46,6 +46,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DryIoc, Version=2.12.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DryIoc.dll.2.12.4\lib\net45\DryIoc.dll</HintPath>
+    </Reference>
+    <Reference Include="DryIoc.Mvc, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DryIoc.Mvc.dll.2.2.2\lib\net45\DryIoc.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -214,6 +220,10 @@
       <Project>{B867E3F0-1475-43E9-A1B4-DE30A1956FE0}</Project>
       <Name>Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ServiceLayer\ServiceLayer.csproj">
+      <Project>{35952B3B-B6B0-46F4-AB1C-77D6F4242BC6}</Project>
+      <Name>ServiceLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -233,7 +243,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>59101</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:59101/</IISUrl>
+          <IISUrl>http://localhost:59102/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

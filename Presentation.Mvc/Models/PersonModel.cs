@@ -1,4 +1,4 @@
-﻿using Domain.Persons;
+﻿using ServiceLayer.Persons;
 
 namespace Presentation.Mvc.Models
 {

@@ -8,46 +8,43 @@ namespace DataAccess.Dummy
 {
     public class PersonRepository : IPersonRepository
     {
-        public void Add(PersonEntity entity)
+        public IQueryable<IPerson> GetAll()
         {
-            //Do nothing
-        }
-
-        public IQueryable<PersonEntity> GetAll()
-        {
-            return new List<PersonEntity>
+            return new List<IPerson>
             {
-                new PersonEntity
-                {
-                    Id = 1,
-                    FirstName = "Hello",
-                    LastName = "World",
-                    DateOfBirth = DateTime.Today
-                },
-                    new PersonEntity
-                {
-                    Id = 2,
-                    FirstName = "Hello2",
-                    LastName = "World2",
-                    DateOfBirth = DateTime.Today.AddDays(-1)
-                }
+                new Person{Id = 1, DateOfBirth = new DateTime(2000, 1, 1), FirstName = "Hello", LastName = "World!"},
+                new Person{Id = 2, DateOfBirth = new DateTime(2010, 1, 1), FirstName = "Hi", LastName = "World!"},
+                new Person{Id = 3, DateOfBirth = new DateTime(2017, 1, 1), FirstName = "Wazup", LastName = "World!"},
             }.AsQueryable();
         }
 
-        public PersonEntity GetById(int id)
+        public IPerson GetById(int id)
         {
-            return new PersonEntity
+            return new Person
             {
                 Id = 1,
+                DateOfBirth = new DateTime(2000, 1, 1),
                 FirstName = "Hello",
-                LastName = "World",
-                DateOfBirth = DateTime.Today
+                LastName = "World!"
             };
         }
 
-        public void Remove(PersonEntity entity)
+        public void Add(IPerson entity)
         {
-            //Do nothing
+            
         }
+
+        public void Remove(IPerson entity)
+        {
+            
+        }
+    }
+     
+    class Person: IPerson
+    {
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime DateOfBirth { get; set; }
     }
 }

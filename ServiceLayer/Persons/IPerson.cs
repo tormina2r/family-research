@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using ServiceLayer.Common;
 
-namespace Domain.Persons
+namespace ServiceLayer.Persons
 {
-    public interface IPerson
+    public interface IPerson : IEntity
     {
         string FirstName { get; }
         string LastName { get; }

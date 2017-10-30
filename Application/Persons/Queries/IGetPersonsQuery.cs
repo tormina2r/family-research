@@ -1,6 +1,5 @@
-﻿using Domain.Persons;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using ServiceLayer.Persons;
 
 namespace Application.Persons.Queries
 {

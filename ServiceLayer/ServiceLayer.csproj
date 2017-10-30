@@ -8,8 +8,4 @@
     <PackageReference Include="DryIoc.dll" Version="2.12.4" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DataAccess.EF\DataAccess.EF.csproj" />
-  </ItemGroup>
-
 </Project>

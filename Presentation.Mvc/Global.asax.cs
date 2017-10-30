@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Application;
+using DryIoc.Mvc;
 
 namespace Presentation.Mvc
 {
@@ -16,6 +14,7 @@ namespace Presentation.Mvc
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            DependencyResolver.SetResolver(new DryIocDependencyResolver(ServiceContainer.Instance));
         }
     }
 }

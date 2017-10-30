@@ -1,8 +1,7 @@
 ﻿using Application.Persons.Queries;
 using DryIoc;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using DataAccess.Dummy;
+using ServiceLayer.Persons;
 
 namespace Application
 {
@@ -17,6 +16,7 @@ namespace Application
                 .WithTrackingDisposableTransients());
 
             Instance.Register<IGetPersonsQuery, GetPersonsQuery>();
+            Instance.Register<IPersonRepository, PersonRepository>();
         }
     }    
 }
