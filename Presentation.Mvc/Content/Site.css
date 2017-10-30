@@ -9,7 +9,7 @@
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
+/* Override the default bootstrap {} where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
 .dl-horizontal dt {
@@ -21,4 +21,26 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.box-container 
+{
+    float:left;
+    margin: 10px;
+    border: solid;
+    border-width: thin;
+    padding: 10px;
+    width: 150px;
+    outline-style: solid;
+    outline-color: burlywood;
+    outline-width: 3px;
+}
+.box-header 
+{
+    border-bottom: solid;
+    border-width: thin;
+    border-color: burlywood;
+}
+.box-content 
+{
 }
