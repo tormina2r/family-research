@@ -1,9 +1,9 @@
-﻿using ServiceLayer.Persons;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using Domain.Persons;
+using Application.Persons.Queries;
+using ServiceLayer.Persons;
 
-namespace Application.Persons.Queries
+namespace Domain.Persons.Queries
 {
     public class GetPersonsQuery : IGetPersonsQuery
     {

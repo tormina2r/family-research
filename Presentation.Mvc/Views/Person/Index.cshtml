@@ -4,6 +4,15 @@
     ViewBag.Title = "Index";
 }
 
+@section scripts
+{
+    <script>
+
+        
+
+    </script>
+}
+
 @foreach (var item in Model)
 {
     <div class="box-container">
@@ -11,26 +20,7 @@
             <p>@item.FullName</p>
         </div>
         <div class="box-content">
-            <p>Content</p>
+            <p>Born: @item.DateOfBirth</p>
         </div>
     </div>
 }
-
-<div></div>
-
-@*<table class="table">
-        <tr>
-            <th></th>
-        </tr>
-
-        <tr>
-            <td>@item.FullName</td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-
-
-    </table>*@

@@ -8,25 +8,15 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                @Html.ActionLink("Family Research", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Family tree", "Index", "Person")</li>
-                </ul>
-            </div>
+    <div class="fr-site-container">
+        <div class="fr-menu">
+            @Html.ActionLink("Family Research", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("Family tree", "Index", "Person")
+        </div>
+        <div class="fr-content">
+            @RenderBody()
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-    </div>
-    <hr />
-    <footer>
-        <p>&copy; Thor André Andersen</p>
-    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

@@ -1,7 +1,7 @@
-﻿using Application.Persons.Queries;
-using Presentation.Mvc.Models;
+﻿using Presentation.Mvc.Models;
 using System.Linq;
 using System.Web.Mvc;
+using Application.Persons.Queries;
 
 namespace Presentation.Mvc.Controllers
 {

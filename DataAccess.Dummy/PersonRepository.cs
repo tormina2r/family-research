@@ -11,21 +11,15 @@ namespace DataAccess.Dummy
         {
             return new List<IPersonEntity>
             {
-                new Person{Id = 1, DateOfBirth = new DateTime(2000, 1, 1), FirstName = "Hello", LastName = "World!"},
-                new Person{Id = 2, DateOfBirth = new DateTime(2010, 1, 1), FirstName = "Hi", LastName = "World!"},
-                new Person{Id = 3, DateOfBirth = new DateTime(2017, 1, 1), FirstName = "Wazup", LastName = "World!"},
+                new Person{Id = 1, DateOfBirth = new DateTime(2000, 1, 1), FirstName = "Bruce", LastName = "Willis"},
+                new Person{Id = 2, DateOfBirth = new DateTime(2010, 1, 1), FirstName = "Schwarzenegger", LastName = "Arnold"},
+                new Person{Id = 3, DateOfBirth = new DateTime(2017, 1, 1), FirstName = "Stallone", LastName = "Sylvester"},
             }.AsQueryable();
         }
 
         public IPersonEntity GetById(int id)
         {
-            return new Person
-            {
-                Id = 1,
-                DateOfBirth = new DateTime(2000, 1, 1),
-                FirstName = "Hello",
-                LastName = "World!"
-            };
+            return GetAll().FirstOrDefault();
         }
 
         public void Add(IPersonEntity entity)

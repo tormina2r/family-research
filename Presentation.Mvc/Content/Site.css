@@ -1,20 +1,27 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.fr-site-container {
+    height: 900px;
 }
 
-/* Override the default bootstrap {} where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.fr-menu {
+    align-content: center;
+    height: 40px;
+    border-bottom: solid 2px cornflowerblue;
 }
+
+.fr-content {
+    align-content: center;
+}
+
+.fr-menu, .fr-content {
+    padding-top: 10px;
+}
+
+
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
@@ -26,14 +33,15 @@ textarea {
 .box-container 
 {
     float:left;
-    margin: 10px;
+    margin: 5px;
     border: solid;
     border-width: thin;
     padding: 10px;
-    width: 150px;
-    outline-style: solid;
+    /*width: 150px;*/
+    outline: solid burlywood 5px;
+    /*outline-style: solid;
     outline-color: burlywood;
-    outline-width: 3px;
+    outline-width: 3px;*/
 }
 .box-header 
 {
@@ -44,3 +52,4 @@ textarea {
 .box-content 
 {
 }
+
