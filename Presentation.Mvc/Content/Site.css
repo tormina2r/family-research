@@ -34,20 +34,15 @@ textarea {
 {
     float:left;
     margin: 5px;
-    border: solid;
-    border-width: thin;
+    border: solid 2px cornflowerblue;
+    border-radius: 35px;
     padding: 10px;
-    /*width: 150px;*/
-    outline: solid burlywood 5px;
-    /*outline-style: solid;
-    outline-color: burlywood;
-    outline-width: 3px;*/
 }
 .box-header 
 {
     border-bottom: solid;
     border-width: thin;
-    border-color: burlywood;
+    border-color: cornflowerblue;
 }
 .box-content 
 {
